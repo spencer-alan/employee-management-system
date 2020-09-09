@@ -1,3 +1,6 @@
+# .env for credientials
+.env
+
 # Logs
 logs
 *.log
