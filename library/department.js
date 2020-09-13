@@ -1,10 +1,10 @@
 const connection = require("../config/connection.js");
 
 class Department {
-  constructor(id, name) {
-    this.id = id;
-    this.name = name;
-  };
+  // constructor(id, name) {
+  //   this.id = id;
+  //   this.name = name;
+  // };
 
   getAllDepartments() {
     connection.query("SELECT * FROM departments", function(err, results) {
