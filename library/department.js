@@ -25,11 +25,11 @@ class Department {
     );
   };
 
-  addDepartment(name) {
+  addDepartment(data) {
     connection.query(
       "INSERT INTO departments SET ?",
       {
-        name: name
+        data
       }, function(err, result) {
         if (err) throw err;
         return result;
@@ -39,7 +39,7 @@ class Department {
 
   updateDepartment(id, name) {
     connection.query(
-      "UPDATE department SET ? WHERE ?",
+      "UPDATE departments SET ? WHERE ?",
       [
         {
           name: name
