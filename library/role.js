@@ -1,7 +1,7 @@
 const connection = require("../config/connection.js");
 const Department = require("./department.js");
 
-class Role extends Department {
+module.exports = class Role {
   // constructor(id, title, salary, department_id) {
   //   const department_id = Department.id;
 
@@ -55,5 +55,3 @@ class Role extends Department {
     );
   };
 };
-
-module.exports = Role;

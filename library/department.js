@@ -1,6 +1,6 @@
 const connection = require("../config/connection.js");
 
-class Department {
+module.exports = class Department {
   // constructor(id, name) {
   //   this.id = id;
   //   this.name = name;
@@ -66,5 +66,3 @@ class Department {
     );
   };
 };
-
-module.exports = Department;
